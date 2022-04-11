@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: -apple-system , BlinkMacSystemFon , Segoe UI , Roboto , Oxygen
+    Ubuntu , Cantarell , Fira Sans , Droid Sans , Helvetica Neue , sans-serif , Gotham;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+
+}
+
+code {
+  font-family: source-code-pro , Menlo , Monaco , Consolas , Courier New , monospace;
+}
+
+/* ----------------------------------------------- */
+
+/* Estilização da pagina inicial \/ */
+
+/* .home-page {
+
+} */
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.category-list button {
+  background-color: #d8e9a8;
+  border: 0;
+  cursor: pointer;
+  font-family: Gotham , sans-serif;
+  font-size: 14px;
+  margin: 3px 0;
+  padding: 8px;
+}
+
+.categories-products {
+  display: flex;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* .cart-button {
+
+} */
+
+/* Link dentro do botão de carrinho (cart-button) */
+
+/* .cart-button a {
+
+} */
+
+/* ------------------------------------------------- */
+
+/* Estilização dos produtos que aparecem na tela inicial \/ */
+.product {
+  background-color: #f0f5e3;
+  border-radius: 5px;
+  box-shadow: inset -1px 0.5px 10px 0.5px #5555555b , 0.5px 0.5px 16px 0 #5555556b
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  height: 5%;
+  margin: 15px;
+  padding: 15px;
+  width: 25%;
+}
+
+.product-name {
+  font-size: 90%;
+  height: 100%;
+  margin: 6% 0%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Thumbnail do produto */
+.product img {
+  border: 1px solid rgb(236, 236, 236);
+  height: 160px;
+}
+
+.product-price {
+  margin-bottom: 7%;
+}
+
+.product-details-button {
+  text-decoration: none;
+}
+
+.add-to-cart {
+  background-color: #1979c9;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  margin: auto;
+  padding: 8px;
+  transition: 0.1s;
+  width: 180px;
+}
+
+.add-to-cart:hover {
+  background-color: #114e83;
+  cursor: pointer;
+}
+
+.add-to-cart:active {
+  font-size: 15px;
+}
+
+/* ------------------------------------------------- */
+
+/* Estilização da pagina do carrinho! */
+
+/* Aviso de carrinho vazio */
+
+/* .empty-cart-warning p {
+
+}
+
+.cart-product {
+
+}
+
+.cart-product-name {
+
+} */
+
+/* Thumbnail do produto */
+
+/* .cart-product img {
+
+
+}
+
+.cart-product-price {
+
+}
+
+.cart-product-details-button {
+
+} */
+
+/* Link dentro do botão de carrinho (cart-button) */
+
+/* .cart-product-details-button a {
+
+}
+
+.cart-product-quantity {
+
+} */
+
+/* ------------------------------------------------- */
+
+/* Estilização da pagina de um produto especifico */
+
+/* .detailed-product {
+
+}
+
+.detailed-product-name {
+}
+
+.detailed-product-price {
+}
+
+.detailed-product-cart-button {
+}
+
+.detailed-product-add-to-cart-button {
+} */
+
+/* ------------------------------------------------- */
+
+/* Estilização da área de avaliação do produto */
+
+/* .feedback {
+}
+
+.feedback-comment {
+}
+
+.feedback-email {
+}
+
+.feedback-rate {
+}
+
+.feedback-submit-button {
+}
+
+.feedbacks {
+}
+
+.previous-feedback-comment {
+}
+
+.previous-feedback-email {
+} */
+
+/* ------------------------------------------------- */

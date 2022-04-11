@@ -1,0 +1,103 @@
+function myTimer() {
+  const { timer } = this.state;
+
+  if (timer === 0) {
+    this.setState({
+      timer: 30,
+      timeOut: true,
+    }, myStopFunction());
+  } else {
+    this.setState({
+      timer: timer - 1,
+    });
+  }
+  return timer;
+}
+
+function myInterval() {
+  setInterval(myTimer, 1000);
+}
+
+function myStopFunction() {
+  return clearInterval(myInterval);
+}
+
+
+myTimer() {
+    const TIME_INTERVAL = 1000;
+    const { timer } = this.state;
+
+    setTimeout(() => {
+      this.setState(() => ({
+        timer: timer - 1,
+      }), () => {
+        if (timer === 0) {
+          this.setState({
+            timer: 30,
+            timeOut: true,
+          });
+        }
+      });
+    }, TIME_INTERVAL);
+    return timer;
+  }
+
+  myTimer() {
+    const ONE_SECOND = 1000;
+    const { timer } = this.state;
+
+    setInterval(() => {
+      console.log('interval');
+      if (timer === 0) {
+        this.setState({
+          timer: 6,
+          timeOut: true,
+        });
+      } else {
+      this.setState((prevState) => ({
+        timer: prevState.timer - 1,
+      }));
+    }}, ONE_SECOND);
+    return timer;
+  }
+
+
+  myTimer(() => {
+    const ONE_SECOND = 1000;
+    const { timer } = this.state;
+
+    const intervalId = setInterval(() => {
+        console.log('interval');
+        if (timer === 0) {
+          this.setState({
+            timer: 6,
+            timeOut: true,
+          });
+        } else {
+        this.setState((prevState) => ({
+          timer: prevState.timer - 1,
+        }));
+      }}, ONE_SECOND)
+    return(() => {
+        clearInterval(intervalId)
+    })
+},[])
+
+myTimer = setTimeout(() => {
+    const { timer } = 
+    setTimeout(() => {
+          console.log('am i working?');
+          this.setState(() => ({
+            timer: timer - 1,
+          }), () => {
+            if (timer === 0) {
+              this.setState({
+                timer: 6,
+                timeOut: true,
+              });
+            }
+          });
+        }, TIME_INTERVAL);
+        return timer;
+      }
+    }

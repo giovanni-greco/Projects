@@ -1,0 +1,28 @@
+header {
+  align-items: center;
+  background-color: black;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+img {
+  width: 200px;
+}
+
+.span {
+  color: #57c435;
+}
+
+.cart-button {
+  background: none;
+  border: none;
+}
+
+.fa {
+  color: white;
+  font-size: 2rem;
+}

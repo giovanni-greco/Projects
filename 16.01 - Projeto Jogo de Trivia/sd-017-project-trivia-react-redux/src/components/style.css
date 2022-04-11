@@ -1,0 +1,14 @@
+.question-card-div {
+  font-style: normal;
+
+  /* display: flex; */
+
+}
+
+.isWrong {
+  border: 3px solid red;
+}
+
+.isCorrect {
+  border: 3px solid rgb(6, 240, 15);
+}
